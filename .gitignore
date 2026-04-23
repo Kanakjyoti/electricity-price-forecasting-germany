@@ -25,6 +25,10 @@ data/processed/*
 
 # Outputs
 outputs/*
+!outputs/
+!outputs/figures/
+!outputs/tables/
+!outputs/predictions/
 !outputs/figures/.gitkeep
 !outputs/tables/.gitkeep
 !outputs/predictions/.gitkeep
