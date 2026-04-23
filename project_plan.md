@@ -1,21 +1,46 @@
 # Project plan
 
-This document outlines the plan and learning goals for this project. This plan may evolve as I understand the data and problem better.
+This document outlines the initial plan, scope, and learning goals for this project. The plan may evolve as I gain a better understanding of the data, domain, and modelling choices.
 
 ## Title
 Forecasting German Day-Ahead Electricity Prices for 10 February 2026
 
-## What I am trying to do
-I want to predict the hourly German day-ahead electricity prices for 10 February 2026 using historical data available before that date. I will decide later how much historical data to use, after understanding the available sources and what makes the most sense for the project.
+## Project Goal
+The goal of this project is to predict the 24 hourly German day-ahead electricity prices for 10 February 2026 using historical data available before that date.
 
-## Why I am doing this
-I want to use this project to properly learn time-series forecasting from start to finish. That includes data collection, data cleaning, exploratory data analysis, feature engineering, model selection, model training, tuning, evaluation, and understanding why a model works or does not work. I also want this to become a strong GitHub project that I can show on my CV, and I want the work to be fully done and understood by me.
+## Why I Am Doing This
+I want to use this project to learn time-series forecasting properly from start to finish. This includes:
+- data collection
+- data cleaning
+- exploratory data analysis
+- feature engineering
+- baseline modelling
+- model selection
+- model training
+- tuning
+- evaluation
+- interpretation of results
 
-## What I will build
-I want to build a complete end-to-end forecasting project with a clean structure. It should include data preparation, exploratory analysis, baseline models, feature engineering, model comparison, a final forecasting pipeline, and final predictions for the 24 hours of 10 February 2026. I also want the GitHub repository to be clean and well documented. Instead of writing a separate report, I plan to present the project through the repository, README, and a final presentation.
+I also want to turn this into a strong GitHub portfolio project that I can include on my CV. A key goal is that the work should be fully done and understood by me.
 
-## What I will NOT do (for now)
-I will not try to do everything at once. I will not add multiple models or complex techniques just for the sake of it. I will work step by step, focus on understanding each part properly, and build the project in a way that helps me learn deeply.
+## What I Plan to Build
+I plan to build a complete end-to-end forecasting project with a clean and well-organized structure. The project should include:
+
+- data preparation
+- exploratory analysis
+- baseline models
+- feature engineering
+- model comparison
+- a final forecasting pipeline
+- final predictions for the 24 hours of 10 February 2026
+
+I also want the repository to be clean, reproducible, and well documented. Instead of writing a separate report, I plan to present the project through the repository, README, and a final presentation.
+
+## Scope
+This project will be built step by step with a focus on learning and quality.
+
+## What I Will Not Do Initially
+To keep the project focused and meaningful, I will not try to do everything at once. I will not add multiple models or complex techniques only for the sake of making the project look advanced. Instead, I will focus on understanding each step properly and building the project in a way that adds real value.
 
 ## Initial Repository Structure
 - README.md
@@ -25,3 +50,6 @@ I will not try to do everything at once. I will not add multiple models or compl
 - src/
 - outputs/
 - docs/
+
+## Notes
+The exact modelling approach, data sources, and amount of historical data used may be refined later after the data collection and exploratory analysis stages.
