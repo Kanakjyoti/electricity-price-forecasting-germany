@@ -21,7 +21,7 @@ I want to use this project to learn time-series forecasting properly from start 
 - evaluation
 - interpretation of results
 
-I also want to turn this into a strong GitHub portfolio project that I can include on my CV. A key goal is that the work should be fully done and understood by me.
+A key goal is that the work should be fully done and understood by me.
 
 ## What I Plan to Build
 I plan to build a complete end-to-end forecasting project with a clean and well-organized structure. The project should include:
