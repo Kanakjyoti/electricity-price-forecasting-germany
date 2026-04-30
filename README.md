@@ -6,14 +6,14 @@ This project builds an end-to-end machine learning pipeline to forecast hourly G
 
 The focus is on **realistic forecasting**, ensuring that models use only information available at prediction time and avoid data leakage.
 
----
+
 
 ## Problem
 
 Electricity prices are highly volatile due to supply-demand imbalance, renewable generation, and market dynamics.
 The objective is to predict **24 hourly prices for a future day**.
 
----
+
 
 ## Data
 
@@ -21,7 +21,7 @@ The objective is to predict **24 hourly prices for a future day**.
 * Time range: Jan 2023 → 9 Feb 2026
 * Target: Day-ahead price (€/MWh)
 
----
+
 
 ## Pipeline
 
@@ -37,7 +37,6 @@ The objective is to predict **24 hourly prices for a future day**.
 5. Error analysis
 6. Final real-world prediction
 
----
 
 ## Model Progression
 
@@ -51,17 +50,15 @@ The objective is to predict **24 hourly prices for a future day**.
 | XGBoost (tuned)    | Manual tuning          | ~12.2    |
 | XGBoost (Bayesian) | Optimized              | **~9.6** |
 
----
 
 ## Final Forecast (10 Feb 2026)
 
 | Model              | MAE        |
 | ------------------ | ---------- |
-| XGBoost (lag-only) | 22.665     |
+| XGBoost            | 22.665     |
 | Ridge              | 22.140     |
 | Prophet            | **16.607** |
 
----
 
 ## Visual Results
 The following plots illustrate model performance on the final prediction task:
@@ -72,7 +69,6 @@ The following plots illustrate model performance on the final prediction task:
 
 The model captures the overall trend but struggles during high-volatility periods and price spikes.
 
----
 
 ### Model Comparison
 
@@ -86,7 +82,6 @@ XGBoost performs best on historical data, while Prophet produces more stable pre
 * In real forecasting, performance drops when future information is unavailable
 * Prophet performs best in the final prediction because it captures time-series patterns directly
 
----
 
 ## Data Leakage Awareness
 
@@ -94,7 +89,6 @@ Early models used same-time external variables (e.g., actual load and generation
 
 The final forecasting setup uses only past information (lag-based features), ensuring realistic and deployable predictions.
 
----
 
 ## Error Analysis
 
@@ -102,7 +96,6 @@ The final forecasting setup uses only past information (lag-based features), ens
 * Model struggles with **extreme price spikes**
 * Tendency to **underestimate high-price events**
 
----
 
 ## Tech Stack
 
@@ -112,8 +105,6 @@ The final forecasting setup uses only past information (lag-based features), ens
 * Prophet
 * Optuna
 
----
-
 ## Project Structure
 
 ```text
@@ -121,8 +112,6 @@ data/
 notebooks/
 outputs/
 ```
-
----
 
 ## Conclusion
 
@@ -132,5 +121,3 @@ This project highlights the difference between:
 * **Real-world forecasting performance**
 
 While machine learning models achieve low test error, data availability at prediction time becomes the key limitation in practice.
-
----
