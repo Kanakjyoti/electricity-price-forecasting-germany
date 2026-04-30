@@ -109,6 +109,7 @@ The final forecasting setup uses only past information (lag-based features), ens
 
 ```text
 data/
+docs/
 notebooks/
 outputs/
 ```
